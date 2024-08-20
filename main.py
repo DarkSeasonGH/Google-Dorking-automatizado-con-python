@@ -23,7 +23,7 @@ while seguir:
     # Mostrar opciones
     time.sleep(2)
     print("\n")
-    print("Elige una de estas opciones:")
+    print("Estas son las opciones para hacer Google Dorking con el navegador:")
     time.sleep(2)
     print("\n")
     print("1.Buscar url")
@@ -41,6 +41,7 @@ while seguir:
     print("\n")
     print("¿Quieres obtener información de alguna opción? (SI/NO)")
     respuesta_info = input("--->")
+
 
     #Si el usuario dice que si
     if respuesta_info.lower() == "si":
@@ -73,6 +74,7 @@ while seguir:
             print("\n")
             print("Muy bien pues elige abajo si quieres la opcion 1")
 
+
          #Para intitle
         elif eleccion_info == "2":
             time.sleep(2)
@@ -81,6 +83,7 @@ while seguir:
             time.sleep(2)
             print("\n")
             print("Muy bien pues elige abajo si quieres la opcion 2")
+
 
         #Para pdf
         elif eleccion_info == "3":
@@ -91,6 +94,7 @@ while seguir:
             print("\n")
             print("Muy bien pues elige abajo si quieres la opcion 3")
 
+
         #Para jpg
         elif eleccion_info == "4":
             time.sleep(2)
@@ -99,6 +103,7 @@ while seguir:
             time.sleep(2)
             print("\n")
             print("Muy bien pues elige abajo si quieres la opcion 4")
+
 
         #Para allinurl
         elif eleccion_info == "5":
@@ -109,6 +114,7 @@ while seguir:
             print("\n")
             print("Muy bien pues elige abajo si quieres la opcion 5")
 
+
         #Para contenido en el body de una web
         elif eleccion_info == "6":
             time.sleep(2)
@@ -117,6 +123,7 @@ while seguir:
             time.sleep(2)
             print("\n")
             print("Muy bien pues elige abajo si quieres la opcion 6")
+
 
         #Para buscar un sitio
         elif eleccion_info == "7":
@@ -127,6 +134,7 @@ while seguir:
             print("\n")
             print("Muy bien pues elige abajo si quieres la opcion 7")
 
+
         #Para buscar en cache
         elif eleccion_info == "8":
             time.sleep(2)
@@ -136,16 +144,19 @@ while seguir:
             print("\n")
             print("Muy bien pues elige abajo si quieres la opcion 8")
 
+
         else:
             time.sleep(2)
             print("\n")
             print("Opción no válida, por favor elige un número del 1 al 8.")
 
-    elif respuesta_info.lower() == "no":
+
+    if respuesta_info.lower() == "no":
         time.sleep(2)
         print("\n")
         print("Está bien, continuemos")
     
+
     #Si ingresa una opcion invalida
     else:
         time.sleep(2)
@@ -174,6 +185,7 @@ while seguir:
         time.sleep(4)
         webbrowser.open(f"https://www.google.com/search?q={buscar_1}")
 
+
     #Para intitle
     elif eleccion_usuario == "2":
         time.sleep(2)
@@ -185,6 +197,7 @@ while seguir:
         print("Muy bien en breve se verán las búsquedas...")
         time.sleep(4)
         webbrowser.open(f"https://www.google.com/search?q={buscar_2}")
+
 
     #Para pdf
     elif eleccion_usuario == "3":
@@ -198,6 +211,7 @@ while seguir:
         time.sleep(4)
         webbrowser.open(f"https://www.google.com/search?q={buscar_3}")
 
+
     #Para jpg
     elif eleccion_usuario == "4":
         time.sleep(2)
@@ -209,6 +223,7 @@ while seguir:
         print("Muy bien en breve se verán las búsquedas...")
         time.sleep(4)
         webbrowser.open(f"https://www.google.com/search?q={buscar_4}")
+
 
     #Para allinurl
     elif eleccion_usuario == "5":
@@ -222,6 +237,7 @@ while seguir:
         time.sleep(4)
         webbrowser.open(f"https://www.google.com/search?q={buscar_5}")
 
+
     #Para contenido en el body de una web
     elif eleccion_usuario == "6":
         time.sleep(2)
@@ -233,6 +249,7 @@ while seguir:
         print("Muy bien en breve se verán las búsquedas...")
         time.sleep(4)
         webbrowser.open(f"https://www.google.com/search?q={buscar_6}")
+
 
     #Para buscar un sitio
     elif eleccion_usuario == "7":
@@ -246,6 +263,7 @@ while seguir:
         time.sleep(4)
         webbrowser.open(f"https://www.google.com/search?q={buscar_7}")
 
+
     #Para buscar en cache
     elif eleccion_usuario == "8":
         time.sleep(2)
@@ -258,6 +276,7 @@ while seguir:
         time.sleep(4)
         webbrowser.open(f"https://www.google.com/search?q={buscar_8}")
 
+
     #Si la opcion es invalida
     else:
         time.sleep(2)
@@ -266,6 +285,7 @@ while seguir:
         time.sleep(2)
         print("\n")
         print("Tienes que ingresar un número del 1 al 8")
+
 
     # Preguntar al usuario si quiere continuar
     time.sleep(2)
